@@ -1,27 +1,19 @@
 import React from 'react';
-import gpt3Logo from '../../logo.svg';
+import gpt3Logo from '../../logoWhite.png';
 import './footer.css';
 
 const Footer = () => (
   <div className="gpt3__footer section__padding">
-    <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
-    </div>
-
-    <div className="gpt3__footer-btn">
-      <p>Request Early Access</p>
-    </div>
-
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         <img src={gpt3Logo} alt="gpt3_logo" />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
+        <p>Sarit Center, Nairobi, <br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
-        <p>Overons</p>
+        <p>Our Products</p>
         <p>Social Media</p>
-        <p>Counters</p>
+        <p>FAQs</p>
         <p>Contact</p>
       </div>
       <div className="gpt3__footer-links_div">
@@ -32,14 +24,14 @@ const Footer = () => (
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
-        <p>Crechterwoord K12 182 DK Alknjkcb</p>
-        <p>085-132567</p>
-        <p>info@payme.net</p>
+        <p>Sarit Center, Nairobi</p>
+        <p>0700000000</p>
+        <p>info@sarafrika.com</p>
       </div>
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2021 GPT-3. All rights reserved.</p>
+      <p>@2025 Sarafrika. All rights reserved.</p>
     </div>
   </div>
 );

@@ -9,9 +9,11 @@ const Possibility = () => (
     </div>
     <div className="gpt3__possibility-content">
       <h4>Request Early Access to Get Started</h4>
-      <h1 className="gradient__text">The possibilities are <br /> beyond your imagination</h1>
-      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-      <h4>Request Early Access to Get Started</h4>
+      <h1 className="gradient__text">Purpose</h1>
+      <p>Offer a structure, network, community, environment and district for the stimulation, growth, promotion and creative use of a music, sports,  aesthetic, sensibility and culture that draws from the vast, rich and diverse Eastern African realities and experiences for purposes of personal, community, national and regional transformation.  </p>
+      <h1 className="gradient__text">Our Mission</h1>
+      <p>Sarafrika provides affordable education, music, sports, and technology services in Eastern Africa. EAM&MH trains youth, marginalized groups, and special needs individuals, fosters music education, and promotes regional fusions. It builds global partnerships, organizes events, develops media programs, and advocates for funding. Sarafrika also supports social development through music, sports, and technology.</p>
+      <h4>Join Today</h4>
     </div>
   </div>
 );

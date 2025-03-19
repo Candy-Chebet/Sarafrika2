@@ -4,28 +4,36 @@ import './features.css';
 
 const featuresData = [
   {
-    title: 'Improving end distrusts instantly',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    title: 'Training',
+    text: '- Providing access to high quality music knowledge and experiences to a wide regional demographic with a special attention to youth, children and those with special needs.',
   },
   {
-    title: 'Become the tended active',
-    text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    title: 'Partnership',
+    text: 'Sharing music industry information, resources and research, and nurture connections with local and regional arts organisations and enterprises.',
   },
   {
-    title: 'Message or am nothing',
-    text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
+    title: 'Advocacy',
+    text: 'We Work with the regional media to develop and produce music programming formats.',
   },
   {
-    title: 'Really boy law county',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    title: 'Opportunity',
+    text: 'Providing music and sports  practitioners with training in communication, business administration, finance and technical skills.',
+  },
+  {
+    title: 'Repository',
+    text: 'In conjunction with selected institutions, we work to develop a repository of regional music, sports, culture, practice, norms, record of instruments for public record and access purposes.',
+  },
+  {
+    title: 'Sustainabiity',
+    text: 'Support distinct community initiatives seeking to develop micro-economies through the arts.',
   },
 ];
 
 const Features = () => (
   <div className="gpt3__features section__padding" id="features">
     <div className="gpt3__features-heading">
-      <h1 className="gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
-      <p>Request Early Access to Get Started</p>
+      <h1 className="gradient__text">Our Commitment</h1>
+      <p>A Future for Art, Culture and Sports that draws from the vast, rich and diverse Eastern African realities and experiences.</p>
     </div>
     <div className="gpt3__features-container">
       {featuresData.map((item, index) => (

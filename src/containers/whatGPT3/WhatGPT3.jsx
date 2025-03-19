@@ -5,16 +5,16 @@ import './whatGPT3.css';
 const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
-      <Feature title="What is GPT-3" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+      <Feature title="Background" text="Sarafrika also known as Eastern Africa Music, sports, Technology & Media Hub (EAM&MH) was established in 2010 in Nairobi Kenya as a talent training schools with programs in schools, and a team-based learning approach that cuts across all age groups from school going children to adults of all ages. " />
     </div>
     <div className="gpt3__whatgpt3-heading">
-      <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-      <p>Explore the Library</p>
+      <h1 className="gradient__text">A platform that offers structure, network, and community.</h1>
+      <p>Explore Our Products</p>
     </div>
     <div className="gpt3__whatgpt3-container">
-      <Feature title="Chatbots" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought." />
-      <Feature title="Knowledgebase" text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b" />
-      <Feature title="Education" text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b" />
+      <Feature title="Curation" text="After an extensive landscape scoping and gap mapping, the Hub developed a robust program that not only identifies and refines talents but also involves linkage to industry, and from industry to market in East Africa." />
+      <Feature title="Aim" text="Myuzinc’s vision is to create a huge platform and network for stimulation, growth, and promotion of talent to better the livelihood and income of East Africans especially those in low resource settings." />
+      <Feature title="Growth" text="Since inception, the Hub has horned and natured, through experiential and project-based learning, several budding artists, musicians, Sportsmen and Women, Administrators and IT expert." />
     </div>
   </div>
 );

@@ -1,13 +1,13 @@
-import google from '../../assets/google.png';
-import slack from '../../assets/slack.png';
-import atlassian from '../../assets/atlassian.png';
-import dropbox from '../../assets/dropbox.png';
-import shopify from '../../assets/shopify.png';
+import facebook from '../../assets/facebook.png';
+import tiktok from '../../assets/tiktok.png';
+import instagram from '../../assets/instagram.png';
+import twitter from '../../assets/twitter.png';
+import youtube from '../../assets/youtube.png';
 
 export {
-  google,
-  slack,
-  atlassian,
-  dropbox,
-  shopify,
+  facebook,
+  tiktok,
+  instagram,
+  twitter,
+  youtube,
 };
