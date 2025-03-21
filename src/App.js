@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
-import { CTA, Navbar, About } from './components';
+import { CTA, Navbar, About, Team } from './components';
 
 import './App.css';
 
@@ -29,6 +29,7 @@ const App = () => (
           )}
         />
         <Route path="/about" element={<About />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
       <Footer />
     </div>

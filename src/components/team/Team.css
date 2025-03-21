@@ -1,0 +1,154 @@
+.services {
+    margin-top: 20px;
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .team-container h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color:white;
+    justify-content: center;
+    margin-left: 518px;
+    font-size: 48px;
+    font-family: var(--font-family);
+  }
+  
+  .service {
+    flex-basis: 31%;
+    position: relative;
+    color: white;
+  }
+  
+  /* Add this new class for the click-me text */
+  .service::before {
+    content: 'Click Me';
+    position: absolute;
+    top: 50%;  /* Changed from fixed pixels to 50% */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Updated to include Y-axis centering */
+    background: #FF4820;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 0.8rem;
+  }
+  
+  .service img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+  }
+  .modal-content h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-family: var(--font-family);
+  }
+  .modal-content h4 {
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .modal-content img {
+    width: 30%;
+    max-height: 30%;
+    border-radius: 8px;
+  }
+  .caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FF4820;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+    font-family: var(--font-family);
+  }
+  
+  .caption img {
+    width: 20%;
+    margin-bottom: 10px;
+  }
+  
+  .service:hover .caption {
+    opacity: 100;
+    padding-top: 0;
+  }
+  
+  /* Rest of your CSS remains the same */
+  
+  
+  
+  .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    
+    .modal-content {
+      background-color: #212EA0;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 90%;
+      position: relative;
+    }
+    
+    .modal-content p {
+      color: white;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+    
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px;
+    }
+    
+    .close-button:hover {
+      opacity: 0.8;
+    }
+  
+  /*.....media section .....*/
+  
+  @media (max-width: 650px) {
+      .services{
+          flex-direction: column;
+      }
+  
+      .service{
+          flex-basis: 100%;
+          margin: 20px;
+      }
+    }
+    
