@@ -3,7 +3,7 @@ import Feature from '../../components/feature/Feature';
 import './whatGPT3.css';
 
 const WhatGPT3 = () => (
-  <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
+  <div className="gpt3__whatgpt3 section__margin" id="background">
     <div className="gpt3__whatgpt3-feature">
       <Feature title="Background" text="Sarafrika also known as Eastern Africa Music, sports, Technology & Media Hub (EAM&MH) was established in 2010 in Nairobi Kenya as a talent training schools with programs in schools, and a team-based learning approach that cuts across all age groups from school going children to adults of all ages. " />
     </div>

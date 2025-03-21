@@ -37,8 +37,8 @@ const Navbar = () => {
         </div>
         <div className="gpt3__navbar-links_container">
           <p><Link to="/">Home</Link></p>
-          <p><a href="/#wgpt3" onClick={(e) => handleNavigation(e, '/', 'wgpt3')}>Background</a></p>
-          <p><a href="/#products" onClick={(e) => handleNavigation(e, '/', 'products')}>Products</a></p>
+          <p><a href="/#background" onClick={(e) => handleNavigation(e, '/', 'background')}>Background</a></p>
+          <p><a href="/#apps" onClick={(e) => handleNavigation(e, '/', 'apps')}>Products</a></p>
           <p><a href="/about" onClick={(e) => handleNavigation(e, '/about')}>Our Commitment</a></p>
           <p><a href="/team" onClick={(e) => handleNavigation(e, '/team')}>Team</a></p>
         </div>
@@ -56,8 +56,8 @@ const Navbar = () => {
         <div className="gpt3__navbar-menu_container scale-up-center">
           <div className="gpt3__navbar-menu_container-links">
             <p><Link to="/">Home</Link></p>
-            <p><a href="/#wgpt3" onClick={(e) => handleNavigation(e, '/', 'wgpt3')}>Background</a></p>
-            <p><a href="/#products" onClick={(e) => handleNavigation(e, '/', 'products')}>Products</a></p>
+            <p><a href="/#background" onClick={(e) => handleNavigation(e, '/', 'background')}>Background</a></p>
+            <p><a href="/#apps" onClick={(e) => handleNavigation(e, '/', 'apps')}>Products</a></p>
             <p><a href="/about" onClick={(e) => handleNavigation(e, '/about')}>Our Commitment</a></p>
             <p><a href="/team" onClick={(e) => handleNavigation(e, '/team')}>Team</a></p>
           </div>
