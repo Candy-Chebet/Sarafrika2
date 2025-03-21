@@ -1,24 +1,22 @@
 .about .progress {
+  margin-top: 30px;
     position: sticky;
     top: 0;
     left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-width: 90%;
-    margin-left: 60px;
+    max-width: 60%;
+    margin-left: 265px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     background: #FF4820;
     border-radius: 20px;
-    font-size: 28px;
+    font-size: 20px;
     font-family: var(--font-family);
   }
-  
-  /* .about .progress .progressBar {
-    height: 10px;
-    background-color: white;
-  } */
-  
+    
   .about .container {
     display: flex;
     align-items: center;
@@ -81,3 +79,75 @@
     width: 200px;
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    .about .progress {
+      max-width: 80%; /* Adjust width for smaller screens */
+      margin: 20px auto; /* Center it */
+      font-size: 16px; /* Reduce font size */
+      padding: 8px;
+    }
+  
+    .about .container {
+      flex-direction: column; /* Stack items */
+      padding: 20px;
+    }
+  
+    .about .container .wrapper {
+      flex-direction: column;
+      width: 100%; /* Ensure it fits small screens */
+      margin: 0;
+      padding: 20px;
+      gap: 30px;
+    }
+  
+    .about .container .wrapper .imageContainer {
+      width: 90%; /* Adjust width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .about .container .wrapper .imageContainer img {
+      width: 100%;
+      height: auto; /* Prevent stretching */
+    }
+  
+    .about .container .wrapper .textContainer {
+      text-align: center; /* Center align text */
+      width: 90%;
+      gap: 20px;
+    }
+  
+    .about .container .wrapper .textContainer h2 {
+      font-size: 30px; /* Reduce heading size */
+    }
+  
+    .about .container .wrapper .textContainer p {
+      font-size: 18px; /* Improve readability */
+    }
+  
+    .about .container .wrapper .textContainer button {
+      width: 150px; /* Adjust button size */
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about .progress {
+      max-width: 90%;
+      font-size: 28px;
+    }
+  
+    .about .container .wrapper .textContainer h2 {
+      font-size: 25px;
+    }
+  
+    .about .container .wrapper .textContainer p {
+      font-size: 28px;
+    }
+  
+    .about .container .wrapper .textContainer button {
+      width: 130px;
+      font-size: 13px;
+    }
+  }
+  

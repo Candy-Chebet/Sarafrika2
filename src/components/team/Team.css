@@ -1,154 +1,178 @@
 .services {
-    margin-top: 20px;
-    margin: 80px auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between items */
+}
+
+.team-container h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center; /* Centered for all screens */
+  font-size: 36px;
+  font-family: var(--font-family);
+  max-width: 90%; /* Adjust for smaller screens */
+  background: #FF4820;
+  border-radius: 20px;
+  padding: 10px 20px; /* Add padding for better spacing */
+  margin: 0 auto; /* Centers it dynamically */
+}
+
+
+
+.service {
+  flex-basis: 31%;
+  position: relative;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Click Me Text */
+.service::before {
+  content: 'Click Me';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FF4820;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Service Images */
+.service img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+}
+
+/* Caption Overlay */
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 72, 32, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s, padding-top 0.4s;
+  font-family: var(--font-family);
+}
+
+.caption img {
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.service:hover .caption {
+  opacity: 1;
+  padding-top: 0;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #212EA0;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 50%;
+  max-height: 200px;
+  border-radius: 8px;
+}
+
+.modal-content h3, .modal-content h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+}
+
+.modal-content p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.close-button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 650px) {
+  .services {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
   }
 
-  .team-container h2{
-    margin-top: 50px;
-    margin-bottom: 10px;
-    color:white;
-    justify-content: center;
-    margin-left: 518px;
-    font-size: 48px;
-    font-family: var(--font-family);
-  }
-  
   .service {
-    flex-basis: 31%;
-    position: relative;
-    color: white;
+    flex-basis: 100%;
+    margin: 30px;
   }
-  
-  /* Add this new class for the click-me text */
-  .service::before {
-    content: 'Click Me';
-    position: absolute;
-    top: 50%;  /* Changed from fixed pixels to 50% */
-    left: 50%;
-    transform: translate(-50%, -50%);  /* Updated to include Y-axis centering */
-    background: #FF4820;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    z-index: 1;
-    font-size: 0.8rem;
+
+  .team-container h2 {
+    margin-top: 10px;
+    font-size: 28px;
+    max-width: 60%;
+    padding: 8px 15px;
   }
-  
-  .service img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    padding: 10px;
-  }
-  .modal-content h3 {
-    color: white;
-    margin-bottom: 5px;
-    font-family: var(--font-family);
-  }
-  .modal-content h4 {
-    color: white;
-    margin-bottom: 15px;
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
   }
 
   .modal-content img {
-    width: 30%;
-    max-height: 30%;
-    border-radius: 8px;
+    width: 60%;
   }
-  .caption {
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #FF4820;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #FFF;
-    cursor: pointer;
-    opacity: 0;
-    padding-top: 70%;
-    transition: 0.4s;
-    font-family: var(--font-family);
+
+  .service::before {
+    font-size: 0.7rem;
+    padding: 4px 8px;
   }
-  
-  .caption img {
-    width: 20%;
-    margin-bottom: 10px;
-  }
-  
-  .service:hover .caption {
-    opacity: 100;
-    padding-top: 0;
-  }
-  
-  /* Rest of your CSS remains the same */
-  
-  
-  
-  .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-    
-    .modal-content {
-      background-color: #212EA0;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 500px;
-      width: 90%;
-      position: relative;
-    }
-    
-    .modal-content p {
-      color: white;
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 0;
-    }
-    
-    .close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      padding: 5px;
-    }
-    
-    .close-button:hover {
-      opacity: 0.8;
-    }
-  
-  /*.....media section .....*/
-  
-  @media (max-width: 650px) {
-      .services{
-          flex-direction: column;
-      }
-  
-      .service{
-          flex-basis: 100%;
-          margin: 20px;
-      }
-    }
-    
+}

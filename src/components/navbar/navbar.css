@@ -106,6 +106,7 @@
 
     .gpt3__navbar-menu {
         display: flex;
+        z-index: 1000;
     }
 }
 

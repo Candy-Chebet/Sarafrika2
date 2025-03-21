@@ -93,7 +93,7 @@ const Single = ({ item }) => (
 const About = () => (
   <div className="about" id="about">
     <div className="progress">
-      <h1>Our Commitment</h1>
+      <h2>Our Commitment</h2>
       <div className="progressBar" />
     </div>
     {items.map((item) => (
