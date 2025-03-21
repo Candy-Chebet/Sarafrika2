@@ -1,6 +1,6 @@
 import React from 'react';
 import Article from '../../components/article/Article';
-import { blog01, blog02, blog03, blog04, blog05 } from './imports';
+import { elimika, bff, blog03, blog04, blog05 } from './imports';
 import './blog.css';
 
 const Blog = () => (
@@ -10,10 +10,10 @@ const Blog = () => (
     </div>
     <div className="gpt3__blog-container">
       <div className="gpt3__blog-container_groupA">
-        <Article imgUrl={blog01} text="App1" />
+        <Article imgUrl={elimika} text="Elimika deals with all things music and arts education. Get to be under the tutilage of renown names in the industry." />
       </div>
       <div className="gpt3__blog-container_groupB">
-        <Article imgUrl={blog02} text="App 2" />
+        <Article imgUrl={bff} text="Bound For Fame exposes the artist to experience, then the market through networking and job opportunities." />
         <Article imgUrl={blog03} text="App3" />
         <Article imgUrl={blog04} text="App4" />
         <Article imgUrl={blog05} text="App5" />
