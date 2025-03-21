@@ -9,7 +9,9 @@
     text-align: center;
     color: #fff;
     background: #FF4820;
+    border-radius: 20px;
     font-size: 28px;
+    font-family: var(--font-family);
   }
   
   /* .about .progress .progressBar {
@@ -60,16 +62,19 @@
   .about .container .wrapper .textContainer h2 {
     color: white;
     font-size: 45px;
+    font-family: var(--font-family);
   }
   
   .about .container .wrapper .textContainer p {
     color: rgb(180, 180, 180);
     font-size: 15px;
+    font-family: var(--font-family);
   }
   
   .about .container .wrapper .textContainer button {
     color: #fff;
     background: #FF4820;
+    font-size: 15px;
     border: none;
     border-radius: 10px;
     padding: 10px;
