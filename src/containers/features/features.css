@@ -45,6 +45,9 @@
     .gpt3__features {
         flex-direction: column;
     }
+    .gpt3__features-heading p {
+        font-size: 12px;
+    }
 
     .gpt3__features-heading {
         margin: 0 0 2rem 0;
@@ -56,5 +59,15 @@
     .gpt3__features-heading h1 {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    .gpt3__features-heading p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__features-heading p {
+        font-size: 12px;
     }
 }

@@ -60,3 +60,9 @@
         margin: 1rem 0;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .gpt3__features-heading p {
+        font-size: 12px;
+    }
+}
