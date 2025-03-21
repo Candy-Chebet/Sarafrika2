@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logoWhite.png';
 import './navbar.css';
@@ -13,15 +15,15 @@ const Navbar = () => {
           <img src={logo} />
         </div>
         <div className="gpt3__navbar-links_container">
-          <p><a href="#home">Home</a></p>
+          <p><Link to="/">Home</Link></p>
           <p><a href="#wgpt3">Background</a></p>
-          <p><a href="#features">Our Commitment</a></p>
           <p><a href="#blog">Products</a></p>
+          <p><a href="/about">Our Commitment</a></p>
+
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <a href="#blog"><button type="button">Get Started</button></a>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu
@@ -32,8 +34,9 @@ const Navbar = () => {
           <div className="gpt3__navbar-menu_container-links">
             <p><a href="#home">Home</a></p>
             <p><a href="#wgpt3">Background</a></p>
-            <p><a href="#features">Our Commitment</a></p>
+            <p><a href="#about">About</a></p>
             <p><a href="#blog">Products</a></p>
+            <p><a href="#about">Our Commitment</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">
             <p>Sign in</p>

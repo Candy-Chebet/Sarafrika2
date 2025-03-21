@@ -5,27 +5,27 @@ import './features.css';
 const featuresData = [
   {
     title: 'Training',
-    text: '- Providing access to high quality music knowledge and experiences to a wide regional demographic with a special attention to youth, children and those with special needs.',
+    text: 'Training, Continuing Education',
   },
   {
     title: 'Partnership',
-    text: 'Sharing music industry information, resources and research, and nurture connections with local and regional arts organisations and enterprises.',
+    text: 'Partnerships and Network development ',
   },
   {
     title: 'Advocacy',
-    text: 'We Work with the regional media to develop and produce music programming formats.',
+    text: 'Enhanced Public value of sports, music and the arts',
   },
   {
     title: 'Opportunity',
-    text: 'Providing music and sports  practitioners with training in communication, business administration, finance and technical skills.',
+    text: 'Entrepreneurship and creative economy development',
   },
   {
     title: 'Repository',
-    text: 'In conjunction with selected institutions, we work to develop a repository of regional music, sports, culture, practice, norms, record of instruments for public record and access purposes.',
+    text: 'Cultural music knowledge repository and usage',
   },
   {
     title: 'Sustainabiity',
-    text: 'Support distinct community initiatives seeking to develop micro-economies through the arts.',
+    text: 'Sustainable and restorative social development with and through Sports and arts (Peace, Environment, Health, Cultural Confidence and Economic)',
   },
 ];
 

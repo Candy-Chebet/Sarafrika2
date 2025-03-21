@@ -1,0 +1,78 @@
+.about .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 90%;
+    margin-left: 60px;
+    text-align: center;
+    color: #fff;
+    background: #FF4820;
+    font-size: 28px;
+  }
+  
+  /* .about .progress .progressBar {
+    height: 10px;
+    background-color: white;
+  } */
+  
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .about .container .wrapper {
+    padding-top: 50px;
+    width: 1366px;
+    height: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .about .container .wrapper .imageContainer {
+    flex: 1;
+    height: 50%;
+  }
+  
+  .about .container .wrapper .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about .container .wrapper .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .about .container .wrapper .textContainer h2 {
+    color: white;
+    font-size: 45px;
+  }
+  
+  .about .container .wrapper .textContainer p {
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+  }
+  
+  .about .container .wrapper .textContainer button {
+    color: #fff;
+    background: #FF4820;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+  }
