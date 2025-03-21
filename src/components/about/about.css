@@ -147,7 +147,8 @@
   
     .about .container .wrapper .textContainer button {
       width: 130px;
-      font-size: 13px;
+      font-size: 15px;
+      padding: 8px;
     }
   }
   
