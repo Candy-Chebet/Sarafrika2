@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 2px 6rem;
+    padding: 2px 4rem 2px;
 }
 
 .gpt3__navbar-links {
@@ -14,12 +14,13 @@
 }
 
 .gpt3__navbar-links_logo {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 .gpt3__navbar-links_logo img {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: auto;
+    object-fit: contain; /* Ensures logo fits properly */
 }
 
 .gpt3__navbar-links_container {

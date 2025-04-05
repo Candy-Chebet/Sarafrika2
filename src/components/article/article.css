@@ -1,6 +1,6 @@
 .gpt3__blog-container_article {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -8,8 +8,9 @@
 }
 
 .gpt3__blog-container_article-image {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: auto;
+    margin: 3rem;
     background: var(--color-bg);
 }
 
