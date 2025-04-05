@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
-import { CTA, Navbar, About, Team } from './components';
+import { Footer, Blog, Possibility, WhatGPT3, Header } from './containers';
+import { CTA, Navbar, Commitment, Team, Elimika, BFF, Eneza, Nimeahidi, Shop, Events, Terms } from './components';
 
 import './App.css';
 
@@ -21,15 +21,23 @@ const App = () => (
                 <Header />
               </div>
               <WhatGPT3 />
-              <Features />
+              {/* <Features /> */}
               <Possibility />
               <CTA />
               <Blog />
             </>
           )}
         />
-        <Route path="/about" element={<About />} />
+        <Route path="/commitment" element={<Commitment />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/elimika" element={<Elimika />} />
+        <Route path="/bff" element={<BFF />} />
+        <Route path="/eneza" element={<Eneza />} />
+        <Route path="/nimeahidi" element={<Nimeahidi />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/terms" element={<Terms />} />
+
       </Routes>
       <Footer />
     </div>

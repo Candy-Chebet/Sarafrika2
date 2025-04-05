@@ -1,4 +1,4 @@
-.about .progress {
+.commitment .progress {
   margin-top: 30px;
     position: sticky;
     top: 0;
@@ -7,6 +7,7 @@
     padding-bottom: 10px;
     max-width: 60%;
     margin-left: 265px;
+    margin-bottom: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -17,16 +18,17 @@
     font-family: var(--font-family);
   }
     
-  .about .container {
+  .commitment .container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-bottom: 40px;
   }
   
-  .about .container .wrapper {
+  .commitment .container .wrapper {
     padding-top: 50px;
     width: 1366px;
     height: 100%;
@@ -39,37 +41,37 @@
     gap: 50px;
   }
   
-  .about .container .wrapper .imageContainer {
+  .commitment .container .wrapper .imageContainer {
     flex: 1;
     height: 50%;
   }
   
-  .about .container .wrapper .imageContainer img {
+  .commitment .container .wrapper .imageContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .about .container .wrapper .textContainer {
+  .commitment .container .wrapper .textContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
   
-  .about .container .wrapper .textContainer h2 {
+  .commitment .container .wrapper .textContainer h2 {
     color: white;
     font-size: 45px;
     font-family: var(--font-family);
   }
   
-  .about .container .wrapper .textContainer p {
+  .commitment .container .wrapper .textContainer p {
     color: rgb(180, 180, 180);
     font-size: 15px;
     font-family: var(--font-family);
   }
   
-  .about .container .wrapper .textContainer button {
+  .commitment .container .wrapper .textContainer button {
     color: #fff;
     background: #FF4820;
     font-size: 15px;
@@ -80,19 +82,19 @@
     cursor: pointer;
   }
   @media (max-width: 768px) {
-    .about .progress {
+    .commitment .progress {
       max-width: 80%; /* Adjust width for smaller screens */
       margin: 20px auto; /* Center it */
       font-size: 16px; /* Reduce font size */
       padding: 8px;
     }
   
-    .about .container {
+    .commitment .container {
       flex-direction: column; /* Stack items */
       padding: 20px;
     }
   
-    .about .container .wrapper {
+    .commitment .container .wrapper {
       flex-direction: column;
       width: 100%; /* Ensure it fits small screens */
       margin: 0;
@@ -100,31 +102,31 @@
       gap: 30px;
     }
   
-    .about .container .wrapper .imageContainer {
+    .commitment .container .wrapper .imageContainer {
       width: 90%; /* Adjust width */
       height: auto; /* Maintain aspect ratio */
     }
   
-    .about .container .wrapper .imageContainer img {
+    .commitment .container .wrapper .imageContainer img {
       width: 100%;
       height: auto; /* Prevent stretching */
     }
   
-    .about .container .wrapper .textContainer {
+    .commitment .container .wrapper .textContainer {
       text-align: center; /* Center align text */
       width: 90%;
       gap: 20px;
     }
   
-    .about .container .wrapper .textContainer h2 {
+    .commitment .container .wrapper .textContainer h2 {
       font-size: 30px; /* Reduce heading size */
     }
   
-    .about .container .wrapper .textContainer p {
+    .commitment .container .wrapper .textContainer p {
       font-size: 18px; /* Improve readability */
     }
   
-    .about .container .wrapper .textContainer button {
+    .commitment .container .wrapper .textContainer button {
       width: 150px; /* Adjust button size */
       font-size: 18px;
       padding: 8px;
@@ -132,20 +134,20 @@
   }
   
   @media (max-width: 480px) {
-    .about .progress {
+    .commitment .progress {
       max-width: 90%;
       font-size: 28px;
     }
   
-    .about .container .wrapper .textContainer h2 {
+    .commitment .container .wrapper .textContainer h2 {
       font-size: 25px;
     }
   
-    .about .container .wrapper .textContainer p {
+    .commitment .container .wrapper .textContainer p {
       font-size: 28px;
     }
   
-    .about .container .wrapper .textContainer button {
+    .commitment .container .wrapper .textContainer button {
       width: 130px;
       font-size: 15px;
       padding: 8px;

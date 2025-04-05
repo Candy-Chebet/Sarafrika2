@@ -13,19 +13,20 @@ const Footer = () => (
         <h4>Links</h4>
         <p>Our Products</p>
         <p>Social Media</p>
-        <p>FAQs</p>
         <p>Contact</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Company</h4>
-        <p>Terms & Conditions </p>
-        <p>Privacy Policy</p>
+        <p><a href="./terms">Privacy Policy</a></p>
         <p>Contact</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
-        <p>Sarit Center, Nairobi</p>
-        <p>0700000000</p>
+        <p>Don Bosco Savio, S2, Upperhill</p>
+        <p>Nairobi Kenya, 14158 00800</p>
+        <p>+254 732 259259 /
+          +254 717 000 059
+        </p>
         <p>info@sarafrika.com</p>
       </div>
     </div>
