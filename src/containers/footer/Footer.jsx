@@ -7,18 +7,18 @@ const Footer = () => (
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         <img src={gpt3Logo} alt="gpt3_logo" />
-        <p>Sarit Center, Nairobi, <br /> All Rights Reserved</p>
+        <p>Don Bosco Savio, S2, Upperhill, Nairobi Kenya <br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
-        <p>Our Products</p>
+        <p><a href="/#apps">Our Products</a></p>
         <p>Social Media</p>
-        <p>Contact</p>
+        {/* <p>Contact</p> */}
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Company</h4>
         <p><a href="./terms">Privacy Policy</a></p>
-        <p>Contact</p>
+        {/* <p>Contact</p> */}
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
