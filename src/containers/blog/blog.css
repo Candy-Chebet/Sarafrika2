@@ -1,12 +1,13 @@
 .gpt3__blog {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    font-family: var(--font-family);    
 }
 
 .gpt3__blog-heading {
     width: 100%;
     text-align: left;
-
+    font-family: var(--font-family);
     margin-bottom: 5rem;
 }
 
@@ -20,6 +21,7 @@
 .gpt3__blog-container {
     display: flex;
     flex-direction: row;
+    font-family: var(--font-family);
 }
 
 .gpt3__blog-container_groupA {
@@ -29,9 +31,9 @@
 
 .gpt3__blog-container_groupB {
     flex: 1;
-
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
     grid-gap: 2rem;
 }
 

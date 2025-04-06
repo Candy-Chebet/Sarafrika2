@@ -1,65 +1,71 @@
-.gpt3__blog-container_article {
-    width: 400px;
-    height: auto;
-
+/* Article Grid */
+.gpt3__blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    font-family: var(--font-family);
+  }
+  
+  .article-item {
+    background-color: var(--color-footer);
+    border-radius: 40px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    background: var(--color-footer);
-}
-
-.gpt3__blog-container_article-image {
-    width: 300px;
-    height: auto;
-    margin: 3rem;
-    background: var(--color-bg);
-}
-
-.gpt3__blog-container_article-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-light);
+  }
+  
+  .article-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .article-image img {
+    margin-top: 20px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
-}
-
-.gpt3__blog-container_article-content {
+    object-fit: contain;
+  }
+  
+  .article-content {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    padding: 1rem 1.5rem;
-    height: 100%;
-}
-
-.gpt3__blog-container_article-content p {
-    font-family: var(--font-family);
-    font-size: 11.65px;
-    font-weight: 700;
-    line-height: 35px;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-.gpt3__blog-container_article-content h3 {
-    font-family: var(--font-family);
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 30.30px;
+    flex: 1;
+  }
+  
+  .article-info {
+    margin-bottom: 1rem;
+  }
     
-    color: #fff;
-    margin-bottom: 20px;
+  .article-title {
+    font-size: 0.9rem;
+    font-family: var(--font-family);
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+  
+  .article-explore {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 0.9;
     cursor: pointer;
-}
-
-.gpt3__blog-container_article-content p:last-child {
-    cursor: pointer;
-}
-
-
-@media screen and (max-width: 550px) {
-    .gpt3__blog-container_article-content h3 {
-        font-size: 18px;
-        line-height: 25p;
-    }
-    .gpt3__blog-container_article-image img {
-        width: 60%;
-        height: 60%;
-    }
-}
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .article-explore:hover {
+    opacity: 1;
+  }
