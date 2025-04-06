@@ -1,4 +1,4 @@
-import elimika from '../../assets/elimika.jpg';
+import elimika from '../../assets/Elimika.png';
 import bff from '../../assets/bff.png';
 import blog03 from '../../assets/blog03.png';
 import blog04 from '../../assets/blog04.png';
