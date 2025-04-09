@@ -11,13 +11,16 @@ const Footer = () => (
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
-        <p><a href="/#apps">Our Products</a></p>
+        <p><a href="/products">Our Products</a></p>
         <p>Social Media</p>
         {/* <p>Contact</p> */}
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Company</h4>
+        <p><a href="/#background">About</a></p>
         <p><a href="./terms">Privacy Policy</a></p>
+        <p><a href="/commitment">Our Commitment</a></p>
+        <p><a href="/team">Team</a></p>
         {/* <p>Contact</p> */}
       </div>
       <div className="gpt3__footer-links_div">

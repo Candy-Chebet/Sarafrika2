@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="gpt3__navbar-links_container">
           <p><Link to="/">Home</Link></p>
           <p><a href="/#background" onClick={(e) => handleNavigation(e, '/', 'background')}>Background</a></p>
-          <p><a href="/#apps" onClick={(e) => handleNavigation(e, '/', 'apps')}>Products</a></p>
+          <p><a href="/products" onClick={(e) => handleNavigation(e, '/products')}>Products</a></p>
           <p><a href="/commitment" onClick={(e) => handleNavigation(e, '/commitment')}>Our Commitment</a></p>
           <p><a href="/team" onClick={(e) => handleNavigation(e, '/team')}>Team</a></p>
 

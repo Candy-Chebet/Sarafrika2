@@ -1,16 +1,16 @@
 import React from 'react';
 import './article.css';
 
-const Article = ({ imgUrl, text, url }) => (
-  <div className="article-item">
-    <div className="article-image">
-      <img src={imgUrl} alt="blog_image" />
+const Article = ({ imgUrl, text, url, btnText }) => (
+  <div className="article">
+    <div className="article__image-container">
+      <img className="article__image" src={imgUrl} alt="Article" />
     </div>
-    <div className="article-content">
-      <div className="article-info">
-        <h4 className="article-title">{text}</h4>
-      </div>
-      <a href={url} className="article-explore">Explore</a>
+    <div className="article__content">
+      <p className="article__text">{text}</p>
+      <a href={url} className="article__button">
+        {btnText || 'Learn More'}
+      </a>
     </div>
   </div>
 );

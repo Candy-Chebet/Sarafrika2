@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Footer, Blog, Possibility, WhatGPT3, Header } from './containers';
+import { Footer, Products, Possibility, Background, Header } from './containers';
 import { CTA, Navbar, Commitment, Team, Elimika, BFF, Eneza, Nimeahidi, Shop, Events, Terms } from './components';
 
 import './App.css';
@@ -20,14 +20,14 @@ const App = () => (
               <div className="gradient__bg">
                 <Header />
               </div>
-              <WhatGPT3 />
+              <Background />
               {/* <Features /> */}
               <Possibility />
               <CTA />
-              <Blog />
             </>
           )}
         />
+        <Route path="/products" element={<Products />} />
         <Route path="/commitment" element={<Commitment />} />
         <Route path="/team" element={<Team />} />
         <Route path="/elimika" element={<Elimika />} />
