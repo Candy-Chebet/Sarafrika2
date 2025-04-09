@@ -107,7 +107,7 @@ const Single = ({ item }) => {
             )}
 
             <button type="button" onClick={toggleDescription}>
-              {showDesc ? 'Show Less' : 'Explore More'}
+              {showDesc ? 'Show Less' : 'Learn More'}
             </button>
           </div>
         </div>

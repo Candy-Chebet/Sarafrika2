@@ -6,14 +6,14 @@ import './navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
 
   const handleNavigation = (event, targetPath, sectionId = null) => {
     event.preventDefault();
-    setDropdownOpen(false); // Close dropdown after clicking
+    // setDropdownOpen(false); // Close dropdown after clicking
 
     if (location.pathname === targetPath) {
       if (sectionId) {
@@ -43,7 +43,7 @@ const Navbar = () => {
           <p><a href="/team" onClick={(e) => handleNavigation(e, '/team')}>Team</a></p>
 
           {/* Dropdown Menu */}
-          <div
+          {/* <div
             className="navbar-dropdown"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <button type="button" onClick={(e) => handleNavigation(e, '/events')}>Events</button>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
               <p><a href="/team" onClick={(e) => handleNavigation(e, '/team')}>Team</a></p>
 
               {/* Dropdown in Mobile Menu */}
-              <div className="navbar-dropdown">
+              {/* <div className="navbar-dropdown">
                 <button type="button" className="navbar-dropdown-button">More</button>
                 <div className="navbar-dropdown-menu">
                   <button type="button" onClick={(e) => handleNavigation(e, '/elimika')}>Elimika</button>
@@ -95,7 +95,7 @@ const Navbar = () => {
                   <button type="button" onClick={(e) => handleNavigation(e, '/nimeahidi')}>Nimeahidi</button>
                   <button type="button" onClick={(e) => handleNavigation(e, '/events')}>Events</button>
                 </div>
-              </div>
+              </div> */}
             </div>
             {/* <div className="gpt3__navbar-sign">
               <a href="/#blog" onClick={(e) => handleNavigation(e, '/', 'blog')}>
