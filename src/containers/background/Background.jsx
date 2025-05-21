@@ -9,7 +9,7 @@ const Background = () => (
     </div>
     <div className="gpt3__Background-heading">
       <h1 className="gradient__text">A platform that offers structure, network, and community.</h1>
-      <a href="/products"><p>Explore Our Products</p></a>
+      <a href="https://sarafrika.com" target="_blank" rel="noopener noreferrer"><p>Explore Our Products</p></a>
     </div>
     <div className="gpt3__Background-container">
       <Feature title="Curation" text="After an extensive landscape scoping and gap mapping, the Hub developed a robust program that not only identifies and refines talents but also involves linkage to industry, and from industry to market in East Africa." />

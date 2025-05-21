@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import { Footer, Products, Possibility, Background, Header } from './containers';
+// import { Footer, Products, Possibility, Background, Header } from './containers';
+import { Footer, Possibility, Background, Header } from './containers';
 import { CTA, Navbar, Commitment, Team, Elimika, BFF, Eneza, Nimeahidi, Shop, Events, Terms } from './components';
 
 import './App.css';
@@ -27,7 +27,7 @@ const App = () => (
             </>
           )}
         />
-        <Route path="/products" element={<Products />} />
+        {/* <Route path="/products" element={<Products />} /> */}
         <Route path="/commitment" element={<Commitment />} />
         <Route path="/team" element={<Team />} />
         <Route path="/elimika" element={<Elimika />} />

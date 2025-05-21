@@ -98,13 +98,16 @@ const Single = ({ item }) => {
           </div>
           <div className="textContainer">
             <h2>{item.title}</h2>
-            {showDesc && (
-              <ul className="descriptionList">
-                {item.desc.map((point, index) => (
-                  <li key={index}>{point}</li>
+            <ul className="descriptionList">
+              {/* Always show the first point */}
+              <li>{item.desc[0]}</li>
+
+              {/* Show the rest of the points conditionally */}
+              {showDesc
+                && item.desc.slice(1).map((point, index) => (
+                  <li key={index + 1}>{point}</li>
                 ))}
-              </ul>
-            )}
+            </ul>
 
             <button type="button" onClick={toggleDescription}>
               {showDesc ? 'Show Less' : 'Learn More'}
