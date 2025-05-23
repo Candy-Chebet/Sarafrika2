@@ -113,7 +113,7 @@ const Team = () => {
             <p>Raphael Njuguna is the founder and driving force behind Sarafrika,
               Eastern Africa’s hub for music, sports, technology, and media. Since
               2010, he has led the organization with a clear mission: to identify,
-              nurture, and connect talent to industry and market opportunities. With a track record of entrepreneural success addition
+              nurture, and connect talent to industry and market opportunities. With a track record of entrepreneural success and
               a background in education and youth development, Raphael created
               Sarafrika to provide structured, team-based learning programs that empower individuals of all ages.
               His vision has helped transform raw potential into real livelihoods, equipping artists, athletes,
@@ -193,12 +193,22 @@ const Team = () => {
             />
             <h3>Wilfred Njuguna</h3>
             <h4>Software Engineer</h4>
-            <p>
-              Wilfred Njuguna is an accomplished software engineer with extensive experience in
-              system development and infrastructure operations.He has played a pivotal role in building and optimizing mission-critical systems,
-              demonstrating a unique ability to align technology with business goals. His leadership
-              in technical strategy, systems design, and team collaboration has contributed significantly
-              to organizational growth and operational excellence.
+            <p
+              style={{
+                fontSize: '11px',
+              }}
+            >
+              Wilfred Njuguna is an accomplished software engineer with extensive experience in system development and infrastructure operations.
+              Over the course of his career, he has played a pivotal role in building and optimizing mission-critical systems,
+              demonstrating a unique ability to align technology with business goals. His leadership in technical strategy,
+              systems design, and team collaboration has contributed significantly to organizational growth and operational excellence.
+              Wilfred is recognized for his thoughtful approach to engineering challenges and his commitment to delivering scalable,
+              high-performance solutions. His leadership style is defined by integrity, curiosity, and a deep sense of ownership—traits
+              that have consistently inspired teams and elevated project outcomes. Wilfred has contributed to multiple high-impact projects,
+              often serving as a bridge between technical and business teams. His collaborative mindset and focus on continuous improvement
+              have earned him recognition within the industry as a reliable and forward-thinking professional. He continues to lend his
+              expertise to transformative initiatives, mentoring upcoming engineers and championing innovation in system architecture
+              and operations. Wilfred remains committed to advancing technology in ways that drive meaningful, long-term impact.
             </p>
             <button className="close-button" type="button" onClick={() => setShowModal4(false)}>×</button>
           </div>
