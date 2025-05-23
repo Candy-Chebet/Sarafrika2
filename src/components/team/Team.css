@@ -32,6 +32,12 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.service h3 {
+  text-align: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
 .service:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
@@ -122,7 +128,7 @@
 
 .modal-content p {
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   margin: 0;
 }

@@ -3,13 +3,15 @@ import './Team.css';
 import willie from '../../assets/willie.jpg';
 import John from '../../assets/John.jpg';
 import Raphael from '../../assets/Raphael.JPG';
-import Raph from '../../assets/Raph.PNG';
-import Viola from '../../assets/Viola.PNG';
+import Candy from '../../assets/Candy.jpg';
+
+// import Raph from '../../assets/Raph.PNG';
+// import Viola from '../../assets/Viola.PNG';
 import winnie from '../../assets/winnie.jpg';
 
 const Team = () => {
   const [showModal1, setShowModal1] = useState(false);
-  const [showModal2, setShowModal2] = useState(false);
+  // const [showModal2, setShowModal2] = useState(false);
   const [showModal3, setShowModal3] = useState(false);
   const [showModal4, setShowModal4] = useState(false);
   const [showModal5, setShowModal5] = useState(false);
@@ -33,7 +35,7 @@ const Team = () => {
           <h3>Mr. Raphael Njuguna</h3>
           <h4>Managing & Founding Director</h4>
         </div>
-        <div className="service" onClick={() => setShowModal2(true)}>
+        {/* <div className="service" onClick={() => setShowModal2(true)}>
           <img src={Raph} alt="John" />
           <h3>Raphael Mahulo</h3>
           <h4>Operations manager</h4>
@@ -42,7 +44,7 @@ const Team = () => {
           <img src={Viola} alt="Viola" />
           <h3>Viola Karuri</h3>
           <h4>Operations manager</h4>
-        </div>
+        </div> */}
 
         <div className="service" onClick={() => setShowModal3(true)}>
           <img
@@ -57,6 +59,20 @@ const Team = () => {
           />
           <h3>John Waithaka</h3>
           <h4>Operations manager</h4>
+        </div>
+        <div className="service" onClick={() => setShowModal5(true)}>
+          <img
+            src={Candy}
+            alt="Candy"
+            style={{
+              objectFit: 'cover',
+              objectPosition: 'center top', /* Adjust this to control which part of the image to focus on */
+              // width: '250px',
+              // height: 'auto',
+            }}
+          />
+          <h3>Chebet Candy</h3>
+          <h4>Software Engineer & Creative Technologist</h4>
         </div>
         <div className="service" onClick={() => setShowModal4(true)}>
           <img
@@ -94,20 +110,18 @@ const Team = () => {
             <img src={Raphael} alt="Raphael Njuguna" />
             <h3>Raphael Njuguna</h3>
             <h4>Managing & Founding Director</h4>
-            <p />
+            <p>Raphael Njuguna is the founder and driving force behind Sarafrika,
+              Eastern Africa’s hub for music, sports, technology, and media. Since
+              2010, he has led the organization with a clear mission: to identify,
+              nurture, and connect talent to industry and market opportunities. With a track record of entrepreneural success addition
+              a background in education and youth development, Raphael created
+              Sarafrika to provide structured, team-based learning programs that empower individuals of all ages.
+              His vision has helped transform raw potential into real livelihoods, equipping artists, athletes,
+              IT professionals, and creators with the tools to thrive. Through his leadership,
+              Sarafrika has become a catalyst for talent-driven growth in East Africa — bridging the
+              gap between passion and profession.
+            </p>
             <button className="close-button" type="button" onClick={() => setShowModal1(false)}>×</button>
-          </div>
-        </div>
-      )}
-
-      {showModal2 && (
-        <div className="modal-overlay" onClick={() => setShowModal2(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={Raph} alt="Mr. Raphael Njuguna" />
-            <h3>Raphael Mahulo</h3>
-            <h4>Director</h4>
-            <p />
-            <button className="close-button" type="button" onClick={() => setShowModal2(false)}>×</button>
           </div>
         </div>
       )}
@@ -126,12 +140,40 @@ const Team = () => {
               }}
             />
             <h3>John Waithaka</h3>
-            <h4>Teacher</h4>
+            <h4>Operations Manager</h4>
             <p>Graduate  in B.com logistics, accomplished pianist with over 10 years experience in training.
               Currently  working  as Elimika manager. I am hard working, a team player, aggressive,
               perfection and someone who ensures whatever is planned  is effectively implemented ..
             </p>
             <button className="close-button" type="button" onClick={() => setShowModal3(false)}>×</button>
+          </div>
+        </div>
+      )}
+      {showModal5 && (
+        <div className="modal-overlay" onClick={() => setShowModal5(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={Candy}
+              alt="Candy"
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center top', /* Adjust this to control which part of the image to focus on */
+                width: '30%',
+                height: '30%',
+              }}
+            />
+            <h3>Chebet Candy</h3>
+            <h4>Software Engineer & Creative Technologist</h4>
+            <p>With a unique blend of technical expertise and
+              creative vision, Chebet is a graduate in Software Engineering
+              and Theatre Arts & Film Technology. Passionate about both code and
+              storytelling, she brings a multidisciplinary approach to
+              digital innovation. Currently focused on developing apps and systems
+              that are both functional and impactful, Chebet thrives at the
+              intersection of technology and creativity — building tools that not
+              only solve problems but also connect, engage, and inspire users.
+            </p>
+            <button className="close-button" type="button" onClick={() => setShowModal5(false)}>×</button>
           </div>
         </div>
       )}
@@ -163,7 +205,7 @@ const Team = () => {
         </div>
       )}
 
-      {showModal5 && (
+      {/* {showModal5 && (
         <div className="modal-overlay" onClick={() => setShowModal5(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <img src={Viola} alt="Viola" />
@@ -175,7 +217,7 @@ const Team = () => {
             <button className="close-button" type="button" onClick={() => setShowModal5(false)}>×</button>
           </div>
         </div>
-      )}
+      )} */}
 
       {showModal6 && (
         <div className="modal-overlay" onClick={() => setShowModal6(false)}>
